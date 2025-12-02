@@ -1,74 +1,44 @@
-# 🧠 Cognitive Arousal & Investment Decision Prediction  
-### **Using Skin Conductance Response (SCR) and Market Indicators**  
-**CP322 – Final Project | Group 9**
+# Multimodal Physiological Representation Learning for Predicting Risky Financial Decisions
 
----
+## 📋 Project Overview
+This project investigates whether physiological arousal can predict risky financial decisions. We combine market context data with skin conductance responses (SCR) to build predictive models, and explore whether physiological patterns learned from a wearable stress dataset (WESAD) can transfer to financial decision-making.
 
-## 📑 Table of Contents
-1. [Overview](#overview)
-2. [Research Question](#research-question)
-3. [Datasets](#datasets)
-   - [WESAD – Physiological Data](#1-wesad--physiological-data)
-   - [Market Dataset – Financial Indicators](#2-market-dataset--financial-indicators)
-4. [Project Structure](#project-structure)
-5. [Environment Setup](#environment-setup)
-6. [Methodology](#methodology)
-7. [Experiments](#experiments)
-8. [Results Summary](#results-summary)
-9. [Limitations](#limitations)
-10. [Team Members](#team-members)
+## 🎯 Research Questions
+1. **Primary**: Can we predict whether a participant will invest in a risky asset from market context + physiological arousal?
+2. **Secondary**: Do we see comparable physiological signatures in a real-world wearable dataset (WESAD), and can we learn a shared representation that transfers across tasks?
 
----
+## 📁 Datasets
 
-## 🧠 Overview
-This project investigates how **cognitive arousal**, measured through **Skin Conductance Response (SCR)**, influences decision-making during **risky investment choices**. We evaluate whether combining **physiological signals** with **market indicators** improves a model’s ability to predict whether a participant chooses a *risky* or *safe* option.
+### **1. Affective Economics (AE) Dataset**
+- **Source**: Internal research dataset obtained for academic purposes
+- **Access**: Included in this repository at `DATASET/AE_investment_dataset.csv`
+- **Description**: 40 investment trials per participant with:
+  - Anticipatory Skin Conductance Response (SCR)
+  - Market context (mean return, volatility)
+  - Investment decisions (money allocated to stocks)
+  - Participant demographics (age, gender, etc.)
+- **Note**: This dataset was provided for this course project. For research use, please contact the original researchers or seek appropriate permissions.
 
-We explore:
-- Physiological signal preprocessing  
-- Multimodal feature engineering  
-- Logistic Regression and Neural Network models  
-- Participant-level evaluation splits  
-- Comparative analysis of unimodal vs. multimodal setups  
+### **2. WESAD (Wearable Stress and Affect Detection) Dataset**
+- **Source**: [Kaggle - WESAD Dataset](https://www.kaggle.com/datasets/orvile/wesad-wearable-stress-affect-detection-dataset)
+- **Description**: Multimodal dataset from 15 subjects wearing Empatica E4 and RespiBAN devices during stress induction
+- **Signals**: ECG, EDA (electrodermal activity), EMG, respiration, body temperature, 3-axis acceleration
+- **Conditions**: Baseline, stress, amusement, meditation
+- **Size**: ~2.4 GB
+- **Citation**: Schmidt, P., Reiss, A., Duerichen, R., Marberger, C., & Van Laerhoven, K. (2018). Introducing WESAD, a multimodal dataset for wearable stress and affect detection. ICMI.
 
-Our central goal is to understand if **changes in physiological arousal correlate with risk-taking behaviour** in financial contexts.
+## 🛠️ Setup Instructions
 
----
+### **Prerequisites**
+- Python 3.8+
+- Google Colab (recommended) or local environment with GPU
+- Kaggle account (for WESAD dataset download)
 
-## 🎯 Research Question
-**Does integrating physiological arousal (SCR) with market indicators improve prediction accuracy for risky investment decisions compared to using financial features alone?**
+### **Installation**
+```bash
+# Clone repository
+git clone https://github.com/submarinejuice/CP322-Final-Project-Group-9.git
+cd CP322-Final-Project-Group-9
 
----
-
-## 📂 Datasets
-
-### **1. WESAD – Physiological Data**
-The WESAD (Wearable Stress and Affect Detection) dataset provides multimodal physiological signals collected from 15 participants under different emotional conditions.
-
-We primarily use:
-- **Electrodermal Activity (EDA) / Skin Conductance Response (SCR)**  
-- Preprocessed into **tonic** and **phasic** components  
-- Smoothed, filtered, and windowed to align with investment decision intervals  
-
-**Dataset Link:**  
-https://www.kaggle.com/datasets/prasadvpatil/wesad-dataset  
-
-**Original Paper:**  
-https://ubicomp.eti.uni-siegen.de/home/datasets/icmi18/
-
----
-
-### **2. AE Investment Market Dataset – Financial Indicators**
-A custom curated dataset representing market conditions during a simulated investment task.
-
-Engineered features include:
-- Daily returns  
-- 5-day rolling volatility  
-- Momentum indicators  
-- Cumulative return windows  
-- Market uncertainty features  
-
-These features are aligned with corresponding SCR windows to build multimodal examples.
-
----
-
-## 🗂️ Project Structure
+# Install dependencies
+pip install -r requirements.txt
