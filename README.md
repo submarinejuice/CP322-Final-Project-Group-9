@@ -39,12 +39,13 @@ Market context alone performs similarly (~0.88) but does not outperform physiolo
 │   └── AE_investment_dataset.csv  # AE dataset (included)
 ├── README.md                   # This file
 ├── Multimodal Physiological Representation Learning for Predicting Risky Financial Decisions.PDF  #our IEEE style Machine Learning analysis paper!
-├── MPRL for Financial Risks.PDF #Slide deck for presentation! 
+
 
 
 ├── google drive/
 │   └── WESAD/                  # WESAD raw data (download via Kaggle), mounted to your google drive when you run the kaggle.JSON api :)
 ```
+Link to Canva slidedeck (since file size was > 25mb) https://www.canva.com/design/DAG58HDEzxU/oy_v38EArHar4gdRkseWXg/view?utm_content=DAG58HDEzxU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4156fa62af
 ## 3. Environment Setup
 
 Ensure you have a google account. 
