@@ -70,7 +70,7 @@ Get your kaggle.json from Kaggle:
 
 Run the Google Colab IPYNB file as intended by clicking 'run all'. When prompted by section 1.2 with a 'choose file' input, input your kaggle.JSON file from your devices' directory
 
-###Structure
+### Structure
 ```
 DATASET/WESAD/
     ├── S2/
