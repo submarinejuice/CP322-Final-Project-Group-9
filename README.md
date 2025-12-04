@@ -229,34 +229,6 @@ Experiments and Results section
 - Limited contributions as detailed in the Group Contribution Table in the appendix of the final report.
 
 
-## 12. Appendix Overview & Figures Referenced in Notebook/Report
-
-### 12.1 AE Exploratory Plots
-- Per-participant SCR time series  
-- 30-participant SCR grid  
-- Market signal time series  
-- SCR distribution & per-participant means  
-- Investment rate per participant  
-
-### 12.2 SCR–Investment Diagnostics
-- Correlation heatmaps  
-- Logistic regression curve (trial-level SCR → P(invest))  
-
-### 12.3 Model Diagnostics
-- Confusion matrix  
-- Loss curves  
-- Ablation chart  
-
-### 12.4 WESAD Supplementary
-- Console loader logs  
-- Window segmentation examples  
-- Baseline WESAD classifier output  
-- AE vs WESAD EDA distribution comparison  
-
-### 12.5 Kaggle API (WESAD)
-- Full programmatic download instructions  
-- Exact path structure  
-
 ## 13. Final Notes
 
 This repository provides a complete, reproducible pipeline for analyzing how **physiological arousal** and **market context** influence risky financial decisions. All figures, analyses, and models can be reproduced by running:
