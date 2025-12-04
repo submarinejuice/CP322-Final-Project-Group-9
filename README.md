@@ -39,7 +39,7 @@ Market context alone performs similarly (~0.88) but does not outperform physiolo
 │   └── AE_investment_dataset.csv  # AE dataset (included)
 ├── README.md                   # This file
 ├── Multimodal Physiological Representation Learning for Predicting Risky Financial Decisions.PDF  #our IEEE style Machine Learning analysis paper!
-├── 
+├── MPRL for Financial Risks.PDF #Slide deck for presentation! 
 
 
 ├── google drive/
