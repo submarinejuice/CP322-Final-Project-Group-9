@@ -231,7 +231,7 @@ Experiments and Results section
 
 ## 13. Final Notes
 
-This repository provides a complete, reproducible pipeline for analyzing how **physiological arousal** and **market context** influence risky financial decisions. All figures, analyses, and models can be reproduced by running:
+This repository provides a complete, reproducible pipeline for analyzing how **physiological arousal** and **market context** influence risky financial decisions. All figures, analyses, and models can be reproduced.
 
 
   
