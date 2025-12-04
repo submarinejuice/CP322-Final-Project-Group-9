@@ -229,9 +229,7 @@ Experiments and Results section
 - Limited contributions as detailed in the Group Contribution Table in the appendix of the final report.
 
 
-## 12. Appendix Overview (Referenced in Notebook & Report)
-
-The Appendix (in the report) contains:
+## 12. Appendix Overview & Figures Referenced in Notebook/Report
 
 ### 12.1 AE Exploratory Plots
 - Per-participant SCR time series  
