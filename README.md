@@ -61,9 +61,11 @@ Get your kaggle.json from Kaggle:
 - Account → API → Create New Token
 - make a new file in your editor called 'kaggle.JSON' and format it as:
 ```
+
 { "username": "YOURKAGGLEUSERNAME",
     "key": "YOURKAGGLEAPIKEY"
 }
+
 ```
 
 Run the Google Colab IPYNB file as intended by clicking 'run all'. When prompted by section 1.2 with a 'choose file' input, input your kaggle.JSON file from your devices' directory
